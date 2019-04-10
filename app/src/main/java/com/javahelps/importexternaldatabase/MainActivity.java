@@ -68,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
         this.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "
-                        + id);
                 if(id==0) {
                     Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                     startActivity(intent);
